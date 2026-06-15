@@ -197,35 +197,6 @@
  SKIP: 0
  ```
 
- ## 截图风格演示
-
- 如果你想在 GitHub 首页放“像截图一样”的演示内容，可以直接复用下面这种终端块：
-
- ```text
- > precheck scan . --ports 3000,5173
-
- startup-precheck
- 项目: my-app
- 路径: D:\workspace\my-app
- 类型: node
- 框架: nextjs
- 包管理器: pnpm
-
- 检查结果
- - [PASS] 项目类型识别: 识别为 node 项目
- - [PASS] 运行时检查: node: node 已安装，版本 20.11.1
- - [PASS] 运行时检查: pnpm: pnpm 已安装，版本 9.12.0
- - [FAIL] .env 文件检查: 检测到 .env.example，但 .env 缺失
- - [WARN] 端口检查: 3000: 端口 3000 已被占用
- - [WARN] 服务线索检查: redis: 检测到 redis 相关配置线索，请确认对应服务已启动并配置正确
-
- 汇总
- PASS: 7
- WARN: 2
- FAIL: 1
- SKIP: 0
- ```
- 
  ## 输出状态说明
  
  - `pass`：检查通过
@@ -264,13 +235,6 @@
  ```bash
  npm run test:dev
  ```
- 
- ## 为什么这个项目适合放 GitHub
- 
- - **不是玩具项目**：能直接解决真实开发问题
- - **演示成本低**：clone 后本地马上能跑
- - **可扩展性强**：后续可以继续加规则、HTML 报告、Monorepo 支持
- - **适合录 Demo**：对比“启动前 vs 启动后排查”效果很直观
  
  ## 当前限制
  
